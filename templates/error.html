@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
+    <title>Error</title>
+</head>
+<body>
+        <h1><span>Error</span> {{ response_status_code }}</h1>
+        <p class='message'>{{ message }}</p>
+        <h2 class='message_2'>Please enter the correct city name</h2>
+        <button><a href="{{ url_for('home') }}">Go back</a></button>
+</body>
+</html>

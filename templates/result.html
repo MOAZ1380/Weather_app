@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <h1>Weather in {{ city }}</h1>
+<div class="one">
+    <div class="card_1">
+        <h2>{{ temperature | round(2) }}</h2>
+        <p >Temperature</p>
+    </div>
+    <div class="card_1">
+        <h2>{{ description }}</h2>
+        <p>Weather description</p>
+    </div>
+    <div class="card_1">
+        <h2>{{ weather_condition }}</h2>
+        <p>Weather conditions</p>
+    </div>
+    <div class="card_1">
+        <h2>{{ wind_speed }} m/s</h2>
+        <p>Wind speed</p>
+    </div>
+    <div class="card_1">
+        <h2>{{ wind_direction }}°</h2>
+        <p>wind_direction</p>
+    </div>
+</div>
+</body>
+</html>
