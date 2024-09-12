@@ -1,6 +1,6 @@
 from db import SessionLocal, Weather_data
 from datetime import datetime
-
+## Display and receive all data and send it to the database 
 def add_weather_data_to_db(city, temperature, description, weather_condition, wind_speed, wind_direction):
     db = SessionLocal()
     try:
