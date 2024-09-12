@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from add import add_weather_data_to_db, get_weather_data_from_db
 import requests
 from datetime import datetime
-
+## Flask framework to convert and display attributes using Janja
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
